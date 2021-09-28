@@ -7,8 +7,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.532675856403109 -0.8407897531850165 -0.09658686734900054 0.4248119834519081
-  position -0.49624441319537704 0.7659612902426212 2.5310866574204214
+  orientation -0.534350939484903 -0.8323526371869606 -0.14716711874435015 0.6390905612553486
+  position -1.3688868239166956 1.5937847170611594 2.98021501913142
   follow "robot"
 }
 TexturedBackground {
@@ -160,7 +160,7 @@ DEF gate Robot {
             }
           ]
           endPoint Solid {
-            translation -0.022748444759992312 0.18362672885377837 -0.04000000000000001
+            translation -0.02274844475999231 0.18362672885377831 -0.04000000000000001
             rotation 0 0 1 1.7252369534952172
             children [
               DEF gate Shape {
@@ -262,7 +262,7 @@ DEF gate Robot {
             }
           ]
           endPoint Solid {
-            translation 0.015226440148029843 0.1818722540428654 -0.04000000000000008
+            translation 0.01522644014802984 0.18187225404286533 -0.04000000000000008
             rotation 0 0 1 1.4999999644240787
             children [
               DEF gate Shape {
@@ -350,7 +350,7 @@ DEF gate Robot {
     }
   ]
   name "gate"
-  controller "sync_gate"
+  controller "sync_gates"
 }
 DEF PILLAR_GROUP Group {
   children [
@@ -1057,7 +1057,7 @@ Robot {
                               }
                             ]
                             endPoint Solid {
-                              translation 0.006672878931969408 -0.004000000000010773 -0.00280479964261985
+                              translation 0.006672878931969394 -0.004000000000010884 -0.0028047996426198915
                               rotation 0 -1 0 0.14999997668301449
                               children [
                                 DEF r_shape Shape {
@@ -1109,7 +1109,7 @@ Robot {
                               }
                             ]
                             endPoint Solid {
-                              translation -0.005616460321479566 -0.003999999999997977 -0.0002853319954215089
+                              translation -0.005616460321479566 -0.003999999999997866 -0.00028533199542148113
                               rotation 0 1 0 0.13000000742698672
                               children [
                                 DEF l_ Shape {
@@ -2073,7 +2073,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.025000795484325006 0.024497868609519403 -0.08002273019863437
-        rotation 0.9937620730350084 0.07882587877052642 0.07888867493637422 1.5762574368918578
+        rotation 0.9937620730350084 0.07882587877052645 0.07888867493637418 1.5762574368918574
         children [
           DEF wheel_1 Shape {
             appearance PBRAppearance {
@@ -2144,8 +2144,8 @@ Robot {
             axis 0 1 0
           }
           endPoint Solid {
-            translation 0.07997610504342757 0.002943418862038314 0.050159630450759225
-            rotation 0.07856580779922519 0.35168872881379 0.9328142644011165 3.027480380826777
+            translation 0.07997610504342757 0.0029434188620383133 0.050159630450759225
+            rotation 0.07856580779922516 0.35168872881379 0.9328142644011165 3.027480380826777
             children [
               DEF caster Shape {
                 appearance PBRAppearance {
@@ -2200,7 +2200,7 @@ Robot {
           }
           endPoint Solid {
             translation 0.07990469558766827 0.0029550366778811244 -0.049974412004889036
-            rotation 0.42415199918748175 0.3880145429919465 -0.8182541145707815 4.623845657739919
+            rotation 0.4241519991874821 0.38801454299194654 -0.8182541145707812 4.623845657739919
             children [
               DEF caster Shape {
                 appearance PBRAppearance {
@@ -2345,7 +2345,7 @@ Robot {
   physics Physics {
     density 3000
   }
-  controller "final_robot_controller"
+  controller "test-run"
 }
 DEF CUBE Solid {
   translation 1.2416 0.0249804 -2.16319
