@@ -23,8 +23,8 @@ irr1.enable(timestep)
 irr2.enable(timestep)
 
 while robot.step(timestep) != -1:  
-    rightmotor.setVelocity(0)
-    leftmotor.setVelocity(0)
+    rightmotor.setVelocity(1)
+    leftmotor.setVelocity(1)
     
     irl2_val = irl2.getValue()
     irl1_val = irl1.getValue()
