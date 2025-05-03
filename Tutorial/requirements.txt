@@ -1,0 +1,4 @@
+scikit-fuzzy
+networkx
+numpy
+matplotlib
